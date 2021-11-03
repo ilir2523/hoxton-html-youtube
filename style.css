@@ -8,7 +8,7 @@ header {
     background-color: #ffffff;
     width: 100vw;
     height: 56px;
-    padding-top: 10px;
+    padding: 10px 15px 0 13px;
 }
 
 header img {
@@ -36,6 +36,7 @@ header nav {
 .sec-2 input {
     width: 572px;
     height: 40px;
+    padding: 0 10px;
 }
 .sec-2 button {
     width: 64px;
@@ -49,4 +50,19 @@ header nav {
     border-radius: 50%;
     width: 35px;
     height: 35px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+}
+
+main .menu {
+    display: grid;
+    grid-auto-flow: row;
+    place-items: start center;
+}
+
+main .menu img {
+    width: 72px;
 }
