@@ -66,3 +66,29 @@ main .menu {
 main .menu img {
     width: 72px;
 }
+
+.top-search {
+    height: min-content;
+    position: sticky;
+    padding: 10px 0;
+    
+}
+
+.top-search ul {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center start;
+    list-style: none;
+    gap: 10;
+}
+
+.top-search ul li {
+    list-style: none;
+    min-width: max-content;
+}
+
+.top-search ul li button {
+    padding: 0.2rem 0.5rem;
+    border-radius: 20pc;
+    border: solid 1px #00000030;
+}
