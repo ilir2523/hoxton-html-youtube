@@ -131,28 +131,29 @@ main .menu img {
 
 main .vidios {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(auto-fit, minmax(290px ,auto) );
+    place-items: center;
+    padding-top: 20px;
+    background-color: #f9f9f9;
 }
 
 .vidios__box {
     display: grid;
     grid-template-rows: 1.5fr 1fr;
     place-items: start center;
-    gap: 10px;
-    width: 280px;
-    height: 260px;
-    padding: 20px;
+    width: 290px;
+    height: 290px;
 }
 
 .vidios__box-1 {
     display: grid;
-    grid-template-columns: 72px 1fr;
+    grid-template-columns: 50px 1fr;
 }
 
 .vidios__box-2 {
     display: grid;
     grid-template-rows: 40px 35px;
-    gap: 5px;
+    gap: 10px;
 }
 
 .vidios__box-2 h2 {
@@ -172,4 +173,21 @@ main .vidios {
     font-size: 12px;
     font-weight: 100;
     color: #606060;
+}
+
+.vidios__box-2 .chanel-time h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: 100;
+    color: #6a6a6a;
+}
+
+.vidios__box-2 .chanel-time button {
+    background-color: #ffffff;
+    color: red;
+    border-radius: 2px;
+    border: solid 1px red;
+    width: fit-content;
+    padding: 0 10px;
+    height: 20px;
 }
